@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Awesome Toy Store Festival</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Indie+Flower&family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="toystore.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="festival-container">
+    <header>
+      <h1>Awesome Toy Festival</h1>
+      <img src="./images/festival.png" width="800" alt="room with ballons" />
+    </header>
+
+    <div class="festival-content">
+      <p>Our annual toy festival will return!!!!</p>
+      <p>When: October 3, 2020</p>
+      <p>Where: Toy Plaza, Toy Town</p>
+      <p>We celebrate our community and have attractions for everyone. There will be:</p>
+
+      <div>- music</div>
+      <div>- magic</div>
+      <div>- workshops</div>
+
+      <p>Bring friends and family. It will be a whole day full of fun. It is going to be the event of the year.</p>
+      <p> Full program see below: </p>
+    </div>
+
+    <div class="festival-schedule">
+      <div class="festival-accordion-element">
+        <h2 onclick="toggleAccordion(event)" class="festival-music festival-accordion-header">Music <i class="fa fa-chevron-down"></i> </h2>
+        <div class="festival-element festival-accordion-hidden festival-accordion-content">
+          <div>
+            <div>10:00-11:30 : </div>
+            <div class="festival-text">
+              <div><strong>The Dancing Bunnnies</strong></div>
+              <div>for more information click</div>
+              <div> <a href="https://www.ibm.com/employment/ciceurope/at-de">here</a></div>
+            </div>
+          </div>
+          <div>
+            <div>14:00-15:30 : </div>
+            <div class="festival-text">
+              <div><strong>The Singing Monkies</strong></div>
+              <div>for more information click</div>
+              <div> <a href="https://www.ibm.com/employment/ciceurope/at-de">here</a></div>
+            </div>
+          </div>
+          <div>
+            <div>18:00-19:30 : </div>
+            <div class="festival-text">
+              <div><strong>The Rocking Beatles</strong></div>
+              <div>for more information click </div>
+              <div> <a href="https://www.ibm.com/employment/ciceurope/at-de">here</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="festival-accordion-element">
+        <h2 onclick="toggleAccordion(event)" id="dolls" class="festival-magic toy-dolls festival-accordion-header ">
+Magic <i class="fa fa-chevron-down"></i>
+</h2>
+        <div class="festival-element festival-accordion-hidden festival-accordion-content">
+          <div>
+            <div>12:00-13:30 : </div>
+            <div class="festival-text">
+              <div><strong>Disappearing Bunnnies</strong></div>
+              <div>for more information click </div>
+              <div> <a href="https://www.ibm.com/employment/ciceurope/at-de">here</a></div>
+            </div>
+          </div>
+          <div>
+            <div>16:00-17:30 : </div>
+            <div class="festival-text">
+              <div><strong>The Amazing Rita</strong></div>
+              <div>for more information click</div>
+              <div> <a href="https://www.ibm.com/employment/ciceurope/at-de">here</a></div>
+            </div>
+          </div>
+          <div>
+            <div>20:00-21:30 : </div>
+            <div class="festival-text">
+              <div><strong>The Great Magic Show</strong></div>
+              <div>for more information click</div>
+              <div> <a href="https://www.ibm.com/employment/ciceurope/at-de">here</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="festival-accordion-element">
+        <h2 id="blocks" onclick="toggleAccordion(event)" class="toy-cars festival-workshop festival-accordion-header">
+Workshops <i class="fa fa-chevron-down"></i>
+</h2>
+        <div class="festival-element festival-accordion-hidden festival-accordion-content">
+          <div>
+            <div>10:00-13:00 : </div>
+            <div class="festival-text">
+              <div><strong>Learn Magic Tricks</strong></div>
+              <div>for more information click </div><div><a href="https://www.ibm.com/employment/ciceurope/at-de">here</a></div>
+            </div>
+          </div>
+          <div>
+            <div>14:00-17:00 : </div>
+            <div class="festival-text">
+              <div><strong>Your own Ugly Doll</strong></div>
+              <div>for more information click </div>
+              <div> <a href="https://www.ibm.com/employment/ciceurope/at-de">here</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="festival-content">
+      <div>Tell your friends about the event</div>
+      <div class="social-media"><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a><a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></div>
+
+      <div>
+        <h2 class="contact" id="contact">Contact</h2>
+
+        <div class="festival-element contact-layout">
+          <div>If you want do get in touch with us visit our store, give us a call or write an e-mail. </div>
+          <div>Address: Toy Street 123, 654321 Toy-Town</div>
+          <div>Phone: 123-4567-89</div>
+          <div>email: toys@awesome-toys@.toys</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    var accordionHeaders = document.querySelectorAll(".festival-accordion-header");
+    for (i = 0; i < accordionHeaders.length; i++) {
+      console.log("headers", accordionHeaders[i]);
+      accordionHeaders[i].addEventListener("mouseover", function(item) {
+        item.target.classList.add("hovercolor");
+        console.log("onmouseover", item.target);
+      })
+      accordionHeaders[i].addEventListener("mouseout", function(item) {
+        item.target.classList.remove("hovercolor");
+        console.log("onmouseout");
+      })
+    }
+
+    function toggleAccordion(event) {
+      if (event.target.querySelector(".fa-chevron-down")) {
+        event.target.querySelector(".fa-chevron-down").classList.add("fa-chevron-up");
+        event.target.querySelector(".fa-chevron-down").classList.remove("fa-chevron-down");
+      } else {
+        event.target.querySelector(".fa-chevron-up").classList.add("fa-chevron-down");
+        event.target.querySelector(".fa-chevron-up").classList.remove("fa-chevron-up");
+      }
+      event.target.nextElementSibling.classList.toggle("festival-accordion-hidden");
+    }
+  </script>
+</body>
+
+
+
+</html>

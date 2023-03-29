@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Awesome Toy Store - Create Your Own Ugly Doll</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Indie+Flower&family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="toystore.css" rel="stylesheet">
+
+  </head>
+
+<body>
+  <div class="workshop-container">
+    <header>
+      <h1>Create your own Ugly Doll!</h1>
+      <img src="./images/uglydoll.png" width="800" alt="" />
+    </header>
+    <div class="workshop-content-text">
+      <p>In this workshop you will create your own <u>ugly doll</u></p>
+      <div>When? October 2, 2020</div>
+      <div>
+        Where? <a href="http://puppenmuseum-baden.at/" target="_blank" aria-label="Opens in a new window">here</a>
+      </div>
+      <p>If you want to participate, fill out the form below</p>
+    </div>
+    <div>
+      <div id="registration-msg" role="alert" class="hidden">Thank You for registering! We are looking forward to meeting you!</div>
+    </div>
+
+    <form method="POST">
+      <div class="form-container">
+        <div class="form-wrapper">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" value="John">
+        </div>
+        <div class="form-wrapper">
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" value="Doe">
+        </div>
+        <div class="form-wrapper">
+          <label for="lemail">email:</label>
+          <input type="text" id="lemail" name="lemail" value="john.doe@xyz.com">
+        </div>
+      </div>
+      <div id="workshop-anotherperson">
+      </div>
+      <table class="workshop-table">
+        <tr>
+          <td><button onclick="addAnotherPerson(event)" onkeydown="addAnotherPerson(event)">Add another Person</button></td>
+          <td><button onclick="showSubmitData(event)" onkeydown="showSubmitData(event)">Submit</button></td>
+        </tr>
+        <tr>
+
+        </tr>
+
+      </table>
+
+
+    </form>
+
+
+    <div class="workshop-content-text">
+    <div>Tell your friends about the event</div>
+    <div class="social-media"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+
+      <h2 class="contact">Contact</h2>
+
+      <div class="element contact-layout">
+        <div>If you want do get in touch with us visit our store, give us a call or write an e-mail. </div>
+        <div> Adress: Toy Street 123, 654321 Toy-Town</div>
+        <div>Phone: 123-4567-89</div>
+        <div>email: toys@awesome-toys@.toys</div>
+      </div>
+  </div>
+  </div>
+  </div>
+  <script>
+    function toggleAccordion(event) {
+      console.log("event", event.target.nextElementSibling);
+      event.target.nextElementSibling.classList.toggle("accordion-hidden");
+    }
+
+    function addAnotherPerson(event) {
+      event.preventDefault();
+      // Number of inputs to create
+      var number = 1;
+      // Container <div> where dynamic content will be placed
+      var container = document.getElementById("workshop-anotherperson");
+      //container.classList.add("form-container");
+      // Clear previous contents of the container
+      // Append a node with a random text
+      // Create an <input> element, set its type and name attributes
+      var wrapper = document.createElement("div");
+      wrapper.classList.add("form-container");
+      var first_name = document.createElement("div");
+      first_name.classList.add("form-wrapper");
+      var last_name = document.createElement("div");
+      last_name.classList.add("form-wrapper");
+      var email = document.createElement("div");
+      email.classList.add("form-wrapper");
+
+      var label = document.createElement("label");
+      label.id = "fname";
+      label.name = "fname";
+      label.appendChild(document.createTextNode("First Name:  "));
+      var input = document.createElement("input");
+      input.type = "text";
+      input.name = "member";
+      input.id = "person";
+      var labelTwo = document.createElement("label");
+      labelTwo.id = "lname";
+      labelTwo.name = "lname";
+      labelTwo.appendChild(document.createTextNode("Last Name:"));
+      var input2 = document.createElement("input");
+      input2.type = "text";
+      input2.name = "Lastname";
+      input2.id = "lnperson";
+
+      var labelThree = document.createElement("label");
+      labelThree.id = "email";
+      labelThree.name = "email";
+      labelThree.appendChild(document.createTextNode("E-Mail:"));
+      var inputThree = document.createElement("input");
+      inputThree.type = "text";
+      inputThree.name = "email";
+      inputThree.id = "email";
+
+      container.appendChild(wrapper);
+      wrapper.appendChild(first_name);
+      first_name.appendChild(label);
+      first_name.appendChild(input);
+      // Append a line break
+      wrapper.appendChild(last_name);
+      last_name.appendChild(labelTwo)
+      last_name.appendChild(input2);
+
+      wrapper.appendChild(email);
+      email.appendChild(labelThree)
+      email.appendChild(inputThree);
+
+    }
+
+    function showSubmitData(event) {
+      event.preventDefault();
+      document.getElementById("registration-msg").classList.remove("hidden");
+      document.querySelector("form").classList.add("hidden");
+      console.log("submit Data");
+    }
+  </script>
+</body>
+
+
+
+</html>

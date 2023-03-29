@@ -1,0 +1,349 @@
+body {
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 24px;
+  margin-bottom: 100px;
+}
+
+nav ul {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+nav li {
+  font-family: 'Holtwood One SC', serif;
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid black;
+  margin: 0;
+  font-size: 12px;
+}
+
+h1 {
+  font-family: 'Holtwood One SC', serif;
+  text-align: center;
+}
+
+h3,
+h2 {
+  font-family: 'Holtwood One SC', serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+
+.contact {
+  color: purple;
+}
+
+a.contact:hover {
+  color: yellow;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contact-layout {
+  flex-direction: column;
+}
+
+.hovercolor {
+  color: blue !important;
+}
+.social-media {
+  margin: 20px 0;
+}
+
+.social-media a {
+  padding: 20px;
+}
+
+.festival-element {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.festival-text {
+  flex-direction: column !important;
+  margin-bottom: 5px !important;
+}
+.festival-text div{
+  margin-bottom: 0px !important;
+}
+
+.festival-music {
+  color: green;
+}
+
+.festival-magic {
+  color: yellow
+}
+
+.festival-accordion-hidden {
+  display: none;
+}
+
+.festival-schedule {
+  background-color: silver;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.festival-accordion-element {
+  border-bottom: solid 2px black;
+}
+
+.festival-accordion-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.festival-accordion-header .fa {
+  margin-top: 8px;
+}
+
+.festival-accordion-content {
+  border-top: solid 2px gray;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.festival-accordion-content div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  max-width: 500px;
+  margin-bottom: 10px;
+}
+.festival-container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.festival-workshop {
+  color: red;
+}
+
+.festival-content {
+  max-width: 750px;
+  margin: auto;
+}
+
+
+.workshop-container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.workshop-content-text {
+  margin: 0 auto;
+  max-width: 770px;
+}
+
+.element {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.workshop-table table,th,td {
+  border: none;
+}
+
+.workshop-table td {
+  width: 50%;
+  text-align: end;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contact-layout {
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+#registration-msg {
+  background-color: green;
+  padding: 20px;
+  margin: 10px;
+}
+
+
+.form-container {
+  margin: 0px;
+  background: silver;
+  padding: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 5px;
+}
+
+.form-wrapper label {
+  width: 120px;
+}
+
+.form-wrapper input {
+  width: 220px;
+}
+
+.form-container input {
+  margin: 5px;
+}
+
+button {
+  font-family: 'Holtwood One SC', serif;
+  background: orange;
+  padding: 20px;
+  border: orange solid 1px;
+  border-radius: 25px;
+}
+
+button:hover {
+  background: blue;
+}
+
+#workshop-anotherperson {
+  margin-bottom: 20px;
+}
+
+
+form {
+  margin: 20px 0;
+}
+
+    .toy-container {
+      margin: 0 auto;
+      max-width: 800px;
+    }
+
+
+    .toy-text-image {
+      width: 300px;
+    }
+
+    .toy-element {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .toy-text {
+      width: 50%;
+    }
+
+    .myheading {
+      font-family: 'Holtwood One SC', serif;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .toy-trains {
+      color: green;
+    }
+
+    a.toy-trains:hover {
+      color: yellow;
+    }
+
+    .toy-dolls {
+      color: yellow
+    }
+
+    a.toy-dolls:hover {
+      color: purple;
+    }
+
+    .toy-cars {
+      color: red;
+    }
+
+    a.toy-cars:hover {
+      color: blue;
+    }
+
+    .toy-contact {
+      color: purple;
+    }
+
+    a.toy-contact:hover {
+      color: yellow;
+    }
+
+    .toy-blocks {
+      color: orange;
+    }
+
+    a.toy-blocks:hover {
+      color: blue;
+    }
+
+    table,
+    th,
+    td {
+      border: none;
+    }
+
+    td {
+      width: 50%;
+      text-align: end;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .contact-layout {
+      flex-direction: column;
+    }
+
+    td {
+      vertical-align: top;
+      text-align: left;
+      padding-right: 20px;
+    }
+
+    .course-container{
+      font-family: 'Roboto', sans-serif;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .course-container h1, .course-container h2, .course-container h3, .course-container h4{
+      font-family: 'Roboto', sans-serif;
+    }
+    .course-container h1{
+      font-size: 75px;
+      margin: 40px auto;
+    }
+    .course-container h2{
+      font-size: 50px
+    }
+    .course-container h3{
+      font-size: 26px
+    }
+    .course-container h4{
+      font-size: 20px
+    }
+    .course-header{
+
+      color: #006161;
+    }
